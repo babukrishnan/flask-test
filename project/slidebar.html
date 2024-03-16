@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./slidebar.css">
+</head>
+<body>
+
+<div class="slideshow-container" id="non">
+    <svg onclick="clearslidebar()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="x">
+        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+      </svg>      
+      
+<div>
+ 
+  <div class="mySlides fade">
+    <h3>Maintain hand-to-webcam distance 30-60cm</h3>
+    <h3>Keep pinkie finger down for better calibration</h3>
+  </div>
+
+  <div class="mySlides fade">
+    <h3>Pinch Decrease volume</h3>
+    <h3>Release pinch Increase volume</h3>
+  </div>
+
+  <div class="mySlides fade">
+    <h3>Use index finger and thumb to control the volume</h3>
+    <h3>Press 'q' to quit the webcam</h3>
+  </div>
+  
+</div>
+
+<div class="btn">
+    <button class="prev" onclick="plusSlides(-1, 0)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
+        </svg>
+      </button>
+  
+    <button class="next" onclick="plusSlides(1, 0)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
+        </svg>
+    </button>
+</div>
+
+  <div style="text-align:center" class="dot-align">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+
+<script src="./slidebar.js"></script>
+</body>
+
+</html> 
